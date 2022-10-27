@@ -3,18 +3,24 @@ In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, c
 Interrompi il ciclo appena il nome è stato trovato.
 */
 
-const guest = ["federico" , "matteo" , "alessia" , "mattia"]
+const guest = ["federico" , "matteo" , "alessio" , "mattia"]
 let nameGuest = prompt("Inserisci il tuo nome: ");
 
 let i=0;
 
-while (true){
-    if (nameGuest == guest[i]){
-        console.log("prego può entrare");
-        break;
-    } else if (i = (guest.length - 1)){
-        console.log("il suo nome non è sulla lista");
-        break;
-    }
-    i++;
+// while (true){
+//     if (nameGuest == guest[i]){
+//         console.log("prego può entrare");
+//         break;
+//     } else if (i = (guest.length - 1)){
+//         console.log("il suo nome non è sulla lista");
+//         break;
+//     }
+//     i++;
+// }
+
+if(nameGuest.includes(guest[i])){
+    console.log("prego può entrare");
+} else {
+    console.log("NON può entrare");
 }
